@@ -1,0 +1,142 @@
+body {
+    background-color: #1A2738;
+    color: #c7d5e0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 20px;
+    width: 220px;
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    gap: 34px;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: gray;
+}
+
+
+.tudo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    gap: 30px 20px;
+    margin-top: 40px;
+}
+
+
+.texto1, .texto2, .texto3, .texto4, .texto5 {
+    background-color: transparent;
+    text-align: left;
+}
+
+
+.texto1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.texto3 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.texto5 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.texto2 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.texto4 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2px; 
+    padding-bottom: 40px;
+}
+
+.c {
+    padding: 12px 24px;
+    background-color: #57c65d;
+    color: #000;
+    font-weight: bold;
+    border-radius: 6px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.final {
+    display: none;
+}
+
+
+@media (max-width: 900px) {
+    .tudo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texto1, .texto2, .texto3, .texto4, .texto5 {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer {
+        padding: 20px 0;
+    }
+}
